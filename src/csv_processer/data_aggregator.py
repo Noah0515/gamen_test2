@@ -15,3 +15,8 @@ def getMaxFromDF(df: pd.DataFrame):
     max = df['score'].max()
 
     return max
+
+def getMinFromDF(df: pd.DataFrame):
+    min = df['score'].min()
+
+    return min
