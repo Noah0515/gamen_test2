@@ -4,7 +4,7 @@
 /gamen_test2/csv_data 디렉토리에 테스트데이터들이 있습니다.<br><br>
 윈도우의 cmd기준
 1. 프로젝트의 루트디렉토리에서 python src\summarize.py csv_data\scores01.csv
-2. src 디렉토리에서 python summarize.py ..\csv_data\scores06.csv
+2. src 디렉토리에서 python summarize.py ..\csv_data\scores01.csv
 <br>위 두 명령어중 하나를 선택하시면 됩니다.
 
 # 2. 구현에 대한 설명
