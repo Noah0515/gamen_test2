@@ -7,21 +7,14 @@ from .data_aggregator import getMinFromDF
 
 
 def csvPathToJson(path):
+    # 파일경로로 csv파일을 DataFrame으로 변환
     df = readCsv(path)
 
-    #print(df)
-
+    # 변환된 DataFramen 객체로 각 데이터들을 계산
     count = getCountFromDF(df)
-    #print(f"count: {count}")
-
     average = getAverageFromDF(df)
-    #print(f"average: {average}")
-
     max = getMaxFromDF(df)
-    #print(f"max: {max}")
-
     min = getMinFromDF(df)
-    #print(f"min: {min}")
 
     # dictionary로 만들어서 반환
     data = {
@@ -31,6 +24,5 @@ def csvPathToJson(path):
         "min":min
     }
 
-    #print(data)
     return data
     
