@@ -1,6 +1,7 @@
 import pandas as pd
 from .data_loader import read_csv
 from .data_aggregator import getCountFromDF
+from .data_aggregator import getAverageFromDF
 
 
 def csvPathToJson(path):
@@ -10,4 +11,7 @@ def csvPathToJson(path):
 
     count = getCountFromDF(df)
     print(f"count: {count}")
+
+    average = getAverageFromDF(df)
+    print(f"average: {average}")
     
