@@ -3,6 +3,7 @@ from .data_loader import read_csv
 from .data_aggregator import getCountFromDF
 from .data_aggregator import getAverageFromDF
 from .data_aggregator import getMaxFromDF
+from .data_aggregator import getMinFromDF
 
 
 def csvPathToJson(path):
@@ -18,4 +19,7 @@ def csvPathToJson(path):
 
     max = getMaxFromDF(df)
     print(f"max: {max}")
+
+    min = getMinFromDF(df)
+    print(f"min: {min}")
     
