@@ -11,7 +11,9 @@ def main():
     #print(f"arg: {args.arg01}")
     
     path = Path(args.arg01).resolve()
-    csvPathToJson(path)
+    result = csvPathToJson(path)
+
+    print(result)
 
 if __name__ == "__main__":
     main()

@@ -31,6 +31,6 @@ def csvPathToJson(path):
         "min":min
     }
 
-    print(data)
+    #print(data)
     return data
     
