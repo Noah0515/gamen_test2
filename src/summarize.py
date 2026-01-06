@@ -1,6 +1,6 @@
 import argparse
 from pathlib import Path
-from csv_processer.csv_converter import csvPathToJson
+from csv_processor.csv_converter import csvPathToJson
 
 def main():
     # argument 읽는 부분
@@ -11,7 +11,7 @@ def main():
     #print(f"arg: {args.arg01}")
     
     path = Path(args.arg01).resolve()
-    
+
     try:
         result = csvPathToJson(path)
         print(result)
