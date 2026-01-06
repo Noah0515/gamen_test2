@@ -4,7 +4,7 @@ import pandas as pd
 def read_csv(file_path):
     try:
         df_file = pd.read_csv(file_path)
-        print(df_file)
+        #print(df_file)
 
         return df_file
     except Exception as e:
