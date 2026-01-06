@@ -9,18 +9,18 @@ def getCountFromDF(df: pd.DataFrame):
 
 # 받은 df에서 score column의 평균 반환
 def getAverageFromDF(df: pd.DataFrame):
-    average = df['score'].mean()
+    average = pd.to_numeric(df['score'], errors='coerce').mean()
     #average = df['score'].mean().round(3) 소수점 정리가 필요한 경우
     return average 
 
 # 받은 df에서 score column의 최댓값 반환
 def getMaxFromDF(df: pd.DataFrame):
-    max = df['score'].max()
+    max = pd.to_numeric(df['score'], errors='coerce').max()
 
     return max
 
 # 받은 df에서 score column의 최솟값 반환
 def getMinFromDF(df: pd.DataFrame):
-    min = df['score'].min()
+    min = pd.to_numeric(df['score'], errors='coerce').min()
 
     return min
