@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 파일경로에 있는 csv 파일을 읽어서 dataframe으로 돌려주는 함수
-def read_csv(file_path):
+def readCsv(file_path):
     """
     try:
         df_file = pd.read_csv(file_path)

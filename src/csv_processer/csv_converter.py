@@ -1,5 +1,5 @@
 import pandas as pd
-from .data_loader import read_csv
+from .data_loader import readCsv
 from .data_aggregator import getCountFromDF
 from .data_aggregator import getAverageFromDF
 from .data_aggregator import getMaxFromDF
@@ -7,7 +7,7 @@ from .data_aggregator import getMinFromDF
 
 
 def csvPathToJson(path):
-    df = read_csv(path)
+    df = readCsv(path)
 
     #print(df)
 
